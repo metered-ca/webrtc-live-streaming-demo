@@ -28,10 +28,13 @@
     </div>
 
     <script>
+        const ROOM_URL = "your-app-name.metered.live/broadcast-demo"
+
+
         const meeting = new Metered.Meeting();
         async function joinMeeting() {
             const response = await meeting.join({
-                roomURL: "your-app-name.metered.live/broadcast-demo"
+                roomURL: ROOM_URL
             });
         }
         joinMeeting();
